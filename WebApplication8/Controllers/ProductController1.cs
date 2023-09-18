@@ -10,9 +10,14 @@ namespace WebApplication8.Controllers
         public ProductController1(IProductService productService)
         {
             _productService = productService;
+           
         }
     
         public IActionResult Index()
+        {
+            return View();
+        }
+        public IActionResult Details()
         {
             return View();
         }
