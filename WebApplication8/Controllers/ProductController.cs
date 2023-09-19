@@ -3,11 +3,11 @@ using OnlineShop.Core.Interfaces;
 
 namespace WebApplication8.Controllers
 {
-    public class ProductController1 : Controller
+    public class ProductController : Controller
     {
         private readonly IProductService _productService;
 
-        public ProductController1(IProductService productService)
+        public ProductController(IProductService productService)
         {
             _productService = productService;
            
@@ -17,9 +17,6 @@ namespace WebApplication8.Controllers
         {
             return View();
         }
-        public IActionResult Details()
-        {
-            return View();
-        }
+        
     }
 }
